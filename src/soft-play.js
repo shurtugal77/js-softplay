@@ -10,6 +10,8 @@ const numPeople = {
   children: children
 }
 
+const totalPeople = { ...numPeople }
+
 function occupancy() {
   return numPeople
 }
@@ -20,6 +22,9 @@ function enter(numAdults, numChildren) {
   } else {
     numPeople.adults += numAdults
     numPeople.children += numChildren
+
+    totalPeople.adults += numAdults
+    totalPeople.children += numChildren
     return true
   }
 }
@@ -40,9 +45,26 @@ function leave(numAdults, numChildren) {
   }
 }
 
+function total() {
+  return totalPeople
+}
+
+// console.log(enter(5, 5))
+
+// console.log(occupancy())
+
+// console.log(leave(1, 1))
+// console.log(occupancy())
+
+// console.log(enter(100, 100))
+
+// console.log(occupancy())
+// console.log(total())
+
 // TODO: Change the undefined values below to the name of your functions
 module.exports = {
   enter: enter,
   leave: leave,
-  occupancy: occupancy
+  occupancy: occupancy,
+  total: total
 }
