@@ -1,7 +1,7 @@
 // Softplay
 // Capacity
 const currentCapacity = {
-  adult: 0,
+  adults: 0,
   children: 0
 }
 

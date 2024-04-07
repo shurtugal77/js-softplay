@@ -25,3 +25,22 @@ const { greeting } = myObject
 // const greeting = myObject.greeting
 
 console.log(greeting)
+
+const contactDetails = {
+  firstName: 'Bob',
+  lastName: 'Belcher',
+  age: 49,
+  dob: '13 Aug 1966',
+  occupation: 'chef',
+  address: '123 Burger Lane'
+}
+
+// Log first name
+console.log(contactDetails.firstName)
+
+const bobName = contactDetails.firstName
+
+const { firstName, lastName, occupation } = contactDetails
+console.log(firstName)
+console.log(lastName)
+console.log(occupation)
