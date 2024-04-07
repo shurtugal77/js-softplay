@@ -12,3 +12,16 @@
 // Friends
 // Shuffle
 // all features will have certain functions for what they need to be able to do => "scope of responsiblity"
+
+const myObject = {
+  greeting: 'Hello',
+  name: 'Robert'
+}
+
+console.log(myObject.greeting)
+
+// Object destructcuring
+const { greeting } = myObject
+// const greeting = myObject.greeting
+
+console.log(greeting)
