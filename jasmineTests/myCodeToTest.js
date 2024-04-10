@@ -15,10 +15,24 @@ const whatWasSupportingLifeOnYourChin = () => {
   return answer
 }
 
+const nums = [1, 3, 12, 5, 1, 6, 4, 1, 10]
+// Use a for loop to populate doubleNums with every value from the nums array doubled
+// Use array methods
+const doubleNums = []
+
+// .forEach method
+nums.forEach((currentNumber, index) => {
+  doubleNums.push(currentNumber * 2)
+})
+
+// .map method
+const doubleNumsMapped = nums.map((currentNumber, index) => {
+  return currentNumber * 2
+})
+
 module.exports = {
   shoppingList,
   capitalizeArrayItems,
-  whatWasSupportingLifeOnYourChin
+  whatWasSupportingLifeOnYourChin,
+  doubleNumsMapped
 }
-
-// STOP 01:34:07

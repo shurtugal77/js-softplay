@@ -1,7 +1,8 @@
 const {
   shoppingList,
   capitalizeArrayItems,
-  whatWasSupportingLifeOnYourChin
+  whatWasSupportingLifeOnYourChin,
+  doubleNumsMapped
 } = require('./myCodeToTest.js')
 
 describe('My code to test:', () => {
@@ -30,5 +31,9 @@ describe('My code to test:', () => {
 
     // THEN
     expect(answer).toEqual('Deez Nuts')
+  })
+
+  it('Double numbers in the return array with .map method.', () => {
+    expect(doubleNumsMapped).toEqual([2, 6, 24, 10, 2, 12, 8, 2, 20])
   })
 })
